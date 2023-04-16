@@ -1,14 +1,6 @@
-import HoodieImg from './hoodie.svg';
-import MoonImg from './moon.svg';
-import SunImg from './sun.svg';
-
-const Icon = (props: { src: string; alt: string }) => (
-  <img
-    src={props.src}
-    alt={`${props.alt} icon`}
-    className='duration-300 filter hacker:invert dark:invert'
-  />
-);
+import Hoodie from './hoodie';
+import Moon from './moon';
+import Sun from './sun';
 
 export function ThemeToggle() {
   let indexRef = 0;
@@ -18,12 +10,12 @@ export function ThemeToggle() {
   return (
     <button
       onClick={cycleTheme}
-      className='flex relative gap-1 justify-center w-20 h-6 rounded-full border-2 border-black duration-300 dark:bg-gray-700 dark:border-white hacker:border-green-500 hacker:bg-black'
+      className='relative flex h-6 w-20 justify-center gap-1 rounded-full border-2 border-black duration-300 hacker:border-green-500 hacker:bg-black dark:border-white dark:bg-gray-700'
     >
-      <span className='absolute z-50 p-3 bg-black rounded-full duration-300 -translate-x-full dark:bg-white dark:translate-x-0 -translate-y-[2px] hacker:translate-x-full hacker:bg-green-500'></span>
-      <Icon src={SunImg} alt={'Sun'} />
-      <Icon src={MoonImg} alt={'Moon'} />
-      <Icon src={HoodieImg} alt={'Hoodie'} />
+      <span className='absolute z-50 -translate-x-full -translate-y-[2px] rounded-full bg-black p-3 duration-300 hacker:translate-x-full hacker:bg-green-500 dark:translate-x-0 dark:bg-white'></span>
+      <Sun className='h-full duration-300 hacker:fill-green-500 dark:fill-white' />
+      <Moon className='h-full duration-300 hacker:fill-green-500 dark:fill-white' />
+      <Hoodie className='h-full duration-300 hacker:fill-green-500 dark:fill-white' />
     </button>
   );
 }
