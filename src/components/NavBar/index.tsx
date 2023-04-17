@@ -12,12 +12,18 @@ export const NavBar = () => {
           }`}
       >
         {['home', 'about', 'skills', 'projects', 'connect'].map((item) => {
-          const href = '#' + item;
           return (
             <li>
-              <a onClick={() => setIsOpen(false)} href={href}>
+              <button
+                onClick={() => {
+                  setIsOpen(false);
+                  document
+                    .getElementById(item)
+                    ?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
                 {item}
-              </a>
+              </button>
             </li>
           );
         })}
