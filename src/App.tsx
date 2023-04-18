@@ -1,5 +1,11 @@
-import { useRef } from 'react';
+import { ReactNode, useRef } from 'react';
 import { NavBar } from './components/NavBar';
+
+const Section = ({ pRef, children }: { pRef: any; children: ReactNode }) => (
+  <div ref={pRef} className='pt-16 h-screen md:pt-20'>
+    {children}
+  </div>
+);
 
 function App() {
   const homeRef: any = useRef<HTMLDivElement>();
@@ -10,41 +16,15 @@ function App() {
   return (
     <div className=''>
       <NavBar refs={[homeRef, aboutRef, skillsRef, projectsRef, connectRef]} />
-      <div
-        ref={homeRef}
-        id='home'
-        className='flex justify-center items-center h-screen text-3xl'
-      >
-        Home
-      </div>
-      <div
-        ref={aboutRef}
-        id='about'
-        className='flex justify-center items-center h-screen text-3xl'
-      >
-        about
-      </div>
-      <div
-        ref={skillsRef}
-        id='skills'
-        className='flex justify-center items-center h-screen text-3xl'
-      >
-        skills
-      </div>
-      <div
-        ref={projectsRef}
-        id='projects'
-        className='flex justify-center items-center h-screen text-3xl'
-      >
-        projects
-      </div>
-      <div
-        ref={connectRef}
-        id='connect'
-        className='flex justify-center items-center h-screen text-3xl'
-      >
-        connect
-      </div>
+      <Section pRef={homeRef}>
+        <img src='./components/profile-pic.jpeg' alt='profile pic' />
+        <h1>Branden Palmer</h1>
+        <h2>Front-End Developer</h2>
+      </Section>
+      <Section pRef={aboutRef}>about</Section>
+      <Section pRef={skillsRef}>skills</Section>
+      <Section pRef={projectsRef}>projects</Section>
+      <Section pRef={connectRef}>connect</Section>
     </div>
   );
 }

@@ -15,14 +15,12 @@ export const NavBar = ({ refs }: { refs: any[] }) => {
           (item, index) => {
             const onScreen = useOnScreen(refs[index]);
             return (
-              <li>
+              <li key={index}>
                 <button
                   className={`${onScreen ? 'underline' : ''}`}
                   onClick={() => {
                     setIsOpen(false);
-                    document
-                      .getElementById(item)
-                      ?.scrollIntoView({ behavior: 'smooth' });
+                    refs[index].current.scrollIntoView({ behavior: 'smooth' });
                   }}
                 >
                   {item}
