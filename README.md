@@ -116,8 +116,11 @@ Project Link: [https://github.com/palmerusaf/portfolio](https://github.com/githu
 
 <!-- ACKNOWLEDGMENTS -->
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+## Acknowledgments
+
+- 90s Background by <a href=" https://www.vectorportal.com" >Vectorportal.com</a>, <a class="external text" href="https://creativecommons.org/licenses/by/4.0/" >CC BY</a>
+  <!-- MARKDOWN LINKS & IMAGES -->
+  <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [contributors-shield]: https://img.shields.io/github/contributors/palmerusaf/portfolio.svg?style=for-the-badge
 [contributors-url]: https://github.com/palmerusaf/portfolio/graphs/contributors

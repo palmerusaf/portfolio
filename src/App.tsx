@@ -1,4 +1,5 @@
 import { ReactNode, useRef } from 'react';
+import { Background } from './components/Background';
 import { NavBar } from './components/NavBar';
 
 const Section = ({ pRef, children }: { pRef: any; children: ReactNode }) => (
@@ -15,6 +16,7 @@ function App() {
   const connectRef: any = useRef<HTMLDivElement>();
   return (
     <div className=''>
+      <Background />
       <NavBar refs={[homeRef, aboutRef, skillsRef, projectsRef, connectRef]} />
       <Section pRef={homeRef}>
         <img src='./components/profile-pic.jpeg' alt='profile pic' />
