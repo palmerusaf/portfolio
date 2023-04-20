@@ -15,7 +15,7 @@ function App() {
   const projectsRef: any = useRef<HTMLDivElement>();
   const connectRef: any = useRef<HTMLDivElement>();
   return (
-    <div className=''>
+    <div className='font-hippie hacker:font-pixel dark:font-galaxy'>
       <Background />
       <NavBar refs={[homeRef, aboutRef, skillsRef, projectsRef, connectRef]} />
       <Section pRef={homeRef}>

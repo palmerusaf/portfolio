@@ -4,7 +4,17 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        hippie: ['hippie'],
+        friends: ['friends'],
+        galaxy: ['galaxy'],
+        astrospace: ['astrospace'],
+        glitch: ['glitch'],
+        pixel: ['pixel'],
+        thunder: ['thunder'],
+      },
+    },
   },
   plugins: [
     require('tailwindcss-animate'),

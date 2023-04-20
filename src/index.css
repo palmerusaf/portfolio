@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'hippie';
+  src: url('../fonts/hippie.ttf');
+}
+
+@font-face {
+  font-family: 'friends';
+  src: url('../fonts/friends.ttf');
+}
+
+@font-face {
+  font-family: 'galaxy';
+  src: url('../fonts/galaxy.otf');
+}
+
+@font-face {
+  font-family: 'astrospace';
+  src: url('../fonts/astrospace.ttf');
+}
+
+@font-face {
+  font-family: 'glitch';
+  src: url('../fonts/glitch.ttf');
+}
+@font-face {
+  font-family: 'pixel';
+  src: url('../fonts/pixel.ttf');
+}
