@@ -1,6 +1,7 @@
 import { ReactNode, useRef } from 'react';
 import { Background } from './components/Background';
 import { NavBar } from './components/NavBar';
+import { SectionHeader } from './components/SectionHeader';
 
 const Section = ({ pRef, children }: { pRef: any; children: ReactNode }) => (
   <div ref={pRef} className='pt-16 h-screen md:pt-20'>
@@ -15,7 +16,7 @@ function App() {
   const projectsRef: any = useRef<HTMLDivElement>();
   const connectRef: any = useRef<HTMLDivElement>();
   return (
-    <div className='font-hippie hacker:font-pixel dark:font-galaxy'>
+    <div className='font-friends hacker:font-pixel dark:font-galaxy'>
       <Background />
       <NavBar refs={[homeRef, aboutRef, skillsRef, projectsRef, connectRef]} />
       <Section pRef={homeRef}>
@@ -23,10 +24,18 @@ function App() {
         <h1>Branden Palmer</h1>
         <h2>Front-End Developer</h2>
       </Section>
-      <Section pRef={aboutRef}>about</Section>
-      <Section pRef={skillsRef}>skills</Section>
-      <Section pRef={projectsRef}>projects</Section>
-      <Section pRef={connectRef}>connect</Section>
+      <Section pRef={aboutRef}>
+        <SectionHeader label='About' />
+      </Section>
+      <Section pRef={skillsRef}>
+        <SectionHeader label='Skills' />
+      </Section>
+      <Section pRef={projectsRef}>
+        <SectionHeader label='Projects' />
+      </Section>
+      <Section pRef={connectRef}>
+        <SectionHeader label='Connect' />
+      </Section>
     </div>
   );
 }

@@ -26,7 +26,13 @@
   font-family: 'glitch';
   src: url('../fonts/glitch.ttf');
 }
+
 @font-face {
   font-family: 'pixel';
   src: url('../fonts/pixel.ttf');
+}
+
+@font-face {
+  font-family: 'thunder';
+  src: url('../fonts/thunder.ttf');
 }
