@@ -5,12 +5,12 @@ import { ThemeToggle } from '../ThemeToggle';
 export const NavBar = ({ refs }: { refs: any[] }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className='flex sticky top-0 z-10 justify-between items-center p-2 w-full bg-white shadow-lg duration-300 md:p-6 dark:text-white dark:bg-gray-700 shadow-gray-500 hacker:bg-black hacker:text-green-500 hacker:shadow-green-500 dark:shadow-purple-500'>
+    <nav className='flex sticky top-0 z-10 justify-between items-center p-2 w-full bg-emerald-200 shadow-lg duration-300 md:p-6 dark:text-purple-400 shadow-gray-500 hacker:bg-black hacker:text-green-500 hacker:shadow-green-500 dark:bg-slate-900 dark:shadow-purple-500'>
       <h1 className='text-xl font-bold md:text-2xl font-friends hacker:font-glitch dark:font-astrospace'>
         Branden Palmer
       </h1>
       <ul
-        className={`fixed right-0 top-0 flex h-full flex-col justify-center gap-4 bg-white px-8 text-center text-xl capitalize shadow-lg shadow-gray-500 duration-300 hacker:bg-black hacker:text-green-500 hacker:shadow-green-500 dark:bg-gray-700 dark:text-white dark:shadow-purple-500 md:static md:ml-auto md:translate-x-0 md:flex-row md:shadow-none ${isOpen ? 'translate-x-0' : 'translate-x-full'
+        className={`fixed right-0 top-0 flex h-full flex-col justify-center gap-4 bg-inherit px-8 text-center text-xl capitalize shadow-lg shadow-inherit duration-300 md:static md:ml-auto md:translate-x-0 md:flex-row md:shadow-none ${isOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
       >
         {['home', 'about', 'skills', 'projects', 'connect'].map(
