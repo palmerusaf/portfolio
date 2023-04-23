@@ -1,6 +1,7 @@
 import { ReactNode, useRef } from 'react';
 import { Background } from './components/Background';
 import { NavBar } from './components/NavBar';
+import { ProfilePic } from './components/ProfilePic';
 import { SectionHeader } from './components/SectionHeader';
 
 const Section = ({ pRef, children }: { pRef: any; children: ReactNode }) => (
@@ -20,9 +21,9 @@ function App() {
       <Background />
       <NavBar refs={[homeRef, aboutRef, skillsRef, projectsRef, connectRef]} />
       <Section pRef={homeRef}>
-        <img src='./components/profile-pic.jpeg' alt='profile pic' />
-        <h1>Branden Palmer</h1>
-        <h2>Front-End Developer</h2>
+        <div className='flex flex-col justify-center items-center w-full h-full'>
+          <ProfilePic />
+        </div>
       </Section>
       <Section pRef={aboutRef}>
         <SectionHeader label='About' />
