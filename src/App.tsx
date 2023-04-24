@@ -1,4 +1,4 @@
-import { ReactNode, useRef } from 'react';
+import { ReactNode, useEffect, useRef } from 'react';
 import { Background } from './components/Background';
 import { NavBar } from './components/NavBar';
 import { ProfilePic } from './components/ProfilePic';
@@ -16,6 +16,11 @@ function App() {
   const skillsRef: any = useRef<HTMLDivElement>();
   const projectsRef: any = useRef<HTMLDivElement>();
   const connectRef: any = useRef<HTMLDivElement>();
+
+  useEffect(() => {
+    homeRef.current.scrollIntoView({ behavior: 'smooth' });
+  }, []);
+
   return (
     <div className='font-friends hacker:font-pixel dark:font-galaxy'>
       <Background />
@@ -23,6 +28,9 @@ function App() {
       <Section pRef={homeRef}>
         <div className='flex flex-col justify-center items-center w-full h-full'>
           <ProfilePic />
+          <h2 className='py-1 px-2 -mt-2 text-3xl text-pink-500 whitespace-nowrap bg-yellow-300 shadow duration-700 skew-x-12 dark:text-4xl dark:-skew-x-12 font-friends shadow-gray-500 animate-in fade-in zoom-in-75 hacker:-mt-4 hacker:skew-x-0 hacker:border hacker:border-green-500 hacker:bg-black hacker:font-pixel hacker:text-lg hacker:text-green-500 hacker:shadow-green-500 dark:bg-inherit dark:bg-slate-900 dark:font-galaxy dark:shadow-purple-500'>
+            Front-End Developer
+          </h2>
         </div>
       </Section>
       <Section pRef={aboutRef}>

@@ -4,7 +4,7 @@ import LightPic from './light.png';
 
 export const ProfilePic = () => {
   return (
-    <div className='relative w-64'>
+    <div className='relative w-64 h-64 duration-700 animate-in fade-in zoom-in-75'>
       <img
         className='absolute dark:opacity-0 hacker:opacity-0'
         src={LightPic}
