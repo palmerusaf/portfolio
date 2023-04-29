@@ -6,9 +6,10 @@ import { LinkedInSvg } from './components/Links/LinkedInSvg';
 import { NavBar } from './components/NavBar';
 import { ProfilePic } from './components/ProfilePic';
 import { SectionHeader } from './components/SectionHeader';
+import { Skills } from './components/Skills';
 
 const Section = ({ pRef, children }: { pRef: any; children: ReactNode }) => (
-  <div ref={pRef} className='h-screen pt-16 md:pt-20'>
+  <div ref={pRef} className='pt-16 h-screen md:pt-20'>
     {children}
   </div>
 );
@@ -29,17 +30,17 @@ function App() {
       <Background />
       <NavBar refs={[homeRef, aboutRef, skillsRef, projectsRef, connectRef]} />
       <Section pRef={homeRef}>
-        <div className='flex h-full w-full flex-col items-center justify-center'>
+        <div className='flex flex-col justify-center items-center w-full h-full'>
           <ProfilePic />
-          <h2 className='-mt-2 skew-x-12 whitespace-nowrap bg-yellow-300 px-2 py-1 font-friends text-3xl text-pink-500 shadow shadow-gray-500 animate-in fade-in zoom-in-75 duration-700 hacker:-mt-4 hacker:skew-x-0 hacker:border hacker:border-green-500 hacker:bg-black hacker:font-pixel hacker:text-lg hacker:text-green-500 hacker:shadow-green-500 dark:-skew-x-12 dark:bg-inherit dark:bg-slate-900 dark:font-galaxy dark:text-4xl dark:shadow-purple-400'>
+          <h2 className='py-1 px-2 -mt-2 text-3xl text-pink-500 whitespace-nowrap bg-yellow-300 shadow duration-700 skew-x-12 dark:text-4xl dark:-skew-x-12 font-friends shadow-gray-500 animate-in fade-in zoom-in-75 hacker:-mt-4 hacker:skew-x-0 hacker:border hacker:border-green-500 hacker:bg-black hacker:font-pixel hacker:text-lg hacker:text-green-500 hacker:shadow-green-500 dark:bg-inherit dark:bg-slate-900 dark:font-galaxy dark:shadow-purple-400'>
             Front-End Developer
           </h2>
         </div>
       </Section>
       <Section pRef={aboutRef}>
         <SectionHeader label='About' />
-        <div className='mt-2 flex px-4'>
-          <div className='font-sans mx-auto flex max-w-xl skew-x-3 flex-col overflow-hidden bg-emerald-200 p-4 indent-4 font-bold shadow-lg shadow-gray-500 duration-300 hacker:skew-x-0 hacker:bg-black hacker:text-sm hacker:tracking-normal hacker:text-green-500 hacker:shadow-green-500 dark:bg-slate-900 dark:tracking-widest dark:text-purple-400 dark:shadow-purple-400 md:text-lg md:hacker:text-base'>
+        <div className='flex px-4 mt-2'>
+          <div className='flex overflow-hidden flex-col p-4 mx-auto max-w-xl font-sans font-bold bg-emerald-200 shadow-lg duration-300 skew-x-3 md:text-lg dark:tracking-widest dark:text-purple-400 indent-4 shadow-gray-500 hacker:skew-x-0 hacker:bg-black hacker:text-sm hacker:tracking-normal hacker:text-green-500 hacker:shadow-green-500 md:hacker:text-base dark:bg-slate-900 dark:shadow-purple-400'>
             <p>
               Hello there, I'm Branden. I'm a front-end developer/Air Force
               veteran from the USA. Honestly though, I'm just a big nerd.
@@ -54,7 +55,7 @@ function App() {
                 onClick={() =>
                   connectRef.current.scrollIntoView({ behavior: 'smooth' })
                 }
-                className='-mt-2 mr-1 skew-x-12 whitespace-nowrap bg-yellow-300 px-2 text-pink-500 shadow shadow-gray-500 animate-in fade-in zoom-in-75 duration-700 hacker:-mt-4 hacker:skew-x-0 hacker:border hacker:border-green-500 hacker:bg-black hacker:text-green-500 hacker:underline hacker:shadow-green-500 dark:-skew-x-12 dark:bg-slate-900 dark:shadow-purple-400'
+                className='px-2 mr-1 -mt-2 text-pink-500 whitespace-nowrap bg-yellow-300 shadow duration-700 skew-x-12 dark:-skew-x-12 shadow-gray-500 animate-in fade-in zoom-in-75 hacker:-mt-4 hacker:skew-x-0 hacker:border hacker:border-green-500 hacker:bg-black hacker:text-green-500 hacker:underline hacker:shadow-green-500 dark:bg-slate-900 dark:shadow-purple-400'
               >
                 {' '}
                 here
@@ -67,7 +68,7 @@ function App() {
                 onClick={() =>
                   projectsRef.current.scrollIntoView({ behavior: 'smooth' })
                 }
-                className='-mt-2 mr-1 skew-x-12 whitespace-nowrap bg-yellow-300 px-2 text-pink-500 shadow shadow-gray-500 animate-in fade-in zoom-in-75 duration-700 hacker:-mt-4 hacker:skew-x-0 hacker:border hacker:border-green-500 hacker:bg-black hacker:text-green-500 hacker:underline hacker:shadow-green-500 dark:-skew-x-12 dark:bg-slate-900 dark:shadow-purple-400'
+                className='px-2 mr-1 -mt-2 text-pink-500 whitespace-nowrap bg-yellow-300 shadow duration-700 skew-x-12 dark:-skew-x-12 shadow-gray-500 animate-in fade-in zoom-in-75 hacker:-mt-4 hacker:skew-x-0 hacker:border hacker:border-green-500 hacker:bg-black hacker:text-green-500 hacker:underline hacker:shadow-green-500 dark:bg-slate-900 dark:shadow-purple-400'
               >
                 below.
               </button>
@@ -77,21 +78,22 @@ function App() {
       </Section>
       <Section pRef={skillsRef}>
         <SectionHeader label='Skills' />
+        <Skills />
       </Section>
       <Section pRef={projectsRef}>
         <SectionHeader label='Projects' />
       </Section>
       <Section pRef={connectRef}>
         <SectionHeader label='Connect' />
-        <ul className='mt-36 flex w-full flex-col items-center gap-10'>
+        <ul className='flex flex-col gap-10 items-center mt-36 w-full'>
           <li>
             <a
               rel='noopener'
               target='_blank'
               href='mailto:brandenpalmer08@gmail.com'
-              className='flex skew-x-3 items-center gap-2 bg-emerald-200 px-3 py-1 text-3xl font-bold shadow shadow-gray-500 duration-300 hover:skew-x-12 hover:bg-yellow-300 hover:px-2 hover:py-1 hover:text-pink-500 hover:shadow hacker:skew-x-0 hacker:bg-black hacker:tracking-normal hacker:text-green-500 hacker:shadow-green-500 hover:hacker:skew-x-0 hover:hacker:border hover:hacker:border-green-500 hover:hacker:shadow-green-500 dark:bg-slate-900 dark:tracking-widest dark:text-purple-400 dark:shadow-purple-400 hover:dark:-skew-x-12 hover:dark:shadow-purple-400'
+              className='flex gap-2 items-center py-1 px-3 text-3xl font-bold bg-emerald-200 shadow duration-300 skew-x-3 dark:tracking-widest dark:text-purple-400 hover:py-1 hover:px-2 hover:text-pink-500 hover:bg-yellow-300 hover:shadow hover:skew-x-12 shadow-gray-500 hacker:skew-x-0 hacker:bg-black hacker:tracking-normal hacker:text-green-500 hacker:shadow-green-500 dark:bg-slate-900 dark:shadow-purple-400 hover:hacker:skew-x-0 hover:hacker:border hover:hacker:border-green-500 hover:hacker:shadow-green-500 hover:dark:-skew-x-12 hover:dark:shadow-purple-400'
             >
-              <EmailSvg className='h-full w-8 fill-pink-500 duration-300 hacker:fill-green-500 dark:fill-purple-400' />
+              <EmailSvg className='w-8 h-full duration-300 fill-pink-500 hacker:fill-green-500 dark:fill-purple-400' />
               email
             </a>
           </li>
@@ -100,9 +102,9 @@ function App() {
               rel='noopener'
               target='_blank'
               href='https://github.com/palmerusaf'
-              className='flex skew-x-3 items-center gap-2 bg-emerald-200 px-3 py-1 text-3xl font-bold shadow shadow-gray-500 duration-300 hover:skew-x-12 hover:bg-yellow-300 hover:px-2 hover:py-1 hover:text-pink-500 hover:shadow hacker:skew-x-0 hacker:bg-black hacker:tracking-normal hacker:text-green-500 hacker:shadow-green-500 hover:hacker:skew-x-0 hover:hacker:border hover:hacker:border-green-500 hover:hacker:shadow-green-500 dark:bg-slate-900 dark:tracking-widest dark:text-purple-400 dark:shadow-purple-400 hover:dark:-skew-x-12 hover:dark:shadow-purple-400'
+              className='flex gap-2 items-center py-1 px-3 text-3xl font-bold bg-emerald-200 shadow duration-300 skew-x-3 dark:tracking-widest dark:text-purple-400 hover:py-1 hover:px-2 hover:text-pink-500 hover:bg-yellow-300 hover:shadow hover:skew-x-12 shadow-gray-500 hacker:skew-x-0 hacker:bg-black hacker:tracking-normal hacker:text-green-500 hacker:shadow-green-500 dark:bg-slate-900 dark:shadow-purple-400 hover:hacker:skew-x-0 hover:hacker:border hover:hacker:border-green-500 hover:hacker:shadow-green-500 hover:dark:-skew-x-12 hover:dark:shadow-purple-400'
             >
-              <GithubSvg className='h-full w-8 fill-pink-500 duration-300 hacker:fill-green-500 dark:fill-purple-400' />
+              <GithubSvg className='w-8 h-full duration-300 fill-pink-500 hacker:fill-green-500 dark:fill-purple-400' />
               github
             </a>
           </li>
@@ -111,9 +113,9 @@ function App() {
               rel='noopener'
               target='_blank'
               href='https://linkedin.com/in/branden-palmer'
-              className='flex skew-x-3 items-center gap-2 bg-emerald-200 px-3 py-1 text-3xl font-bold shadow shadow-gray-500 duration-300 hover:skew-x-12 hover:bg-yellow-300 hover:px-2 hover:py-1 hover:text-pink-500 hover:shadow hacker:skew-x-0 hacker:bg-black hacker:tracking-normal hacker:text-green-500 hacker:shadow-green-500 hover:hacker:skew-x-0 hover:hacker:border hover:hacker:border-green-500 hover:hacker:shadow-green-500 dark:bg-slate-900 dark:tracking-widest dark:text-purple-400 dark:shadow-purple-400 hover:dark:-skew-x-12 hover:dark:shadow-purple-400'
+              className='flex gap-2 items-center py-1 px-3 text-3xl font-bold bg-emerald-200 shadow duration-300 skew-x-3 dark:tracking-widest dark:text-purple-400 hover:py-1 hover:px-2 hover:text-pink-500 hover:bg-yellow-300 hover:shadow hover:skew-x-12 shadow-gray-500 hacker:skew-x-0 hacker:bg-black hacker:tracking-normal hacker:text-green-500 hacker:shadow-green-500 dark:bg-slate-900 dark:shadow-purple-400 hover:hacker:skew-x-0 hover:hacker:border hover:hacker:border-green-500 hover:hacker:shadow-green-500 hover:dark:-skew-x-12 hover:dark:shadow-purple-400'
             >
-              <LinkedInSvg className='h-full w-8 fill-pink-500 duration-300 hacker:fill-green-500 dark:fill-purple-400' />
+              <LinkedInSvg className='w-8 h-full duration-300 fill-pink-500 hacker:fill-green-500 dark:fill-purple-400' />
               LinkedIn
             </a>
           </li>

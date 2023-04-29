@@ -14,6 +14,10 @@ export default {
         pixel: ['pixel'],
         thunder: ['thunder'],
       },
+      dropShadow: {
+        green: '1px 1px 2px #22c55e',
+        purple: '1px 1px 2px #a855f7',
+      },
     },
   },
   plugins: [
