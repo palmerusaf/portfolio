@@ -22,11 +22,11 @@ function App() {
   const connectRef: any = useRef<HTMLDivElement>();
 
   useEffect(() => {
-    homeRef.current.scrollIntoView({ behavior: 'smooth' });
+    aboutRef.current.scrollIntoView({ behavior: 'smooth' });
   }, []);
 
   return (
-    <div className='hacker:font-pixel dark:font-galaxy'>
+    <div className='font-sans hacker:font-pixel dark:font-galaxy'>
       <Background />
       <NavBar refs={[homeRef, aboutRef, skillsRef, projectsRef, connectRef]} />
       <Section pRef={homeRef}>
@@ -40,7 +40,7 @@ function App() {
       <Section pRef={aboutRef}>
         <SectionHeader label='About' />
         <div className='flex px-4 mt-2'>
-          <div className='flex overflow-hidden flex-col p-4 mx-auto max-w-xl font-sans font-bold bg-emerald-200 shadow-lg duration-300 skew-x-3 md:text-lg dark:tracking-widest dark:text-purple-400 indent-4 shadow-gray-500 hacker:skew-x-0 hacker:bg-black hacker:text-sm hacker:tracking-normal hacker:text-green-500 hacker:shadow-green-500 md:hacker:text-base dark:bg-slate-900 dark:shadow-purple-400'>
+          <div className='flex overflow-hidden flex-col p-4 mx-auto max-w-xl font-bold bg-emerald-200 shadow-lg duration-300 skew-x-3 md:text-lg dark:tracking-widest dark:text-purple-400 indent-4 shadow-gray-500 hacker:skew-x-0 hacker:bg-black hacker:text-sm hacker:tracking-normal hacker:text-green-500 hacker:shadow-green-500 md:hacker:text-base dark:bg-slate-900 dark:shadow-purple-400'>
             <p>
               Hello there, I'm Branden. I'm a front-end developer/Air Force
               veteran from the USA. Honestly though, I'm just a big nerd.
