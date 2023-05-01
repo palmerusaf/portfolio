@@ -3,6 +3,7 @@ import { Background } from './components/Background';
 import { Connect } from './components/Connect';
 import { NavBar } from './components/NavBar';
 import { ProfilePic } from './components/ProfilePic';
+import { Projects } from './components/Projects';
 import { SectionHeader } from './components/SectionHeader';
 import { Skills } from './components/Skills';
 
@@ -20,7 +21,7 @@ function App() {
   const connectRef: any = useRef<HTMLDivElement>();
 
   useEffect(() => {
-    homeRef.current.scrollIntoView({ behavior: 'smooth' });
+    projectsRef.current.scrollIntoView({ behavior: 'smooth' });
   }, []);
 
   return (
@@ -80,6 +81,7 @@ function App() {
       </Section>
       <Section pRef={projectsRef}>
         <SectionHeader label='Projects' />
+        <Projects />
       </Section>
       <Section pRef={connectRef}>
         <SectionHeader label='Connect' />
