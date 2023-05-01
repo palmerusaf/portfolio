@@ -1,5 +1,5 @@
-import MemespaceVid from './battle-ship.mp4';
-import BattleshipVid from './memespace.mp4';
+import BattleshipVid from './battle-ship.mp4';
+import MemespaceVid from './memespace.mp4';
 import PortfolioVid from './portfolio.mp4';
 
 export interface DataProps {
@@ -31,7 +31,7 @@ export const DATA: DataProps[] = [
   {
     title: 'Battle Ship',
     demoUrl: 'https://palmerusaf.github.io/battle-ship',
-    desc: 'A recreation of the classic board game using test driven development.',
+    desc: 'A re-creation of the classic board game using test driven development.',
     techUsed: ['Webpack', 'Sass', 'Jest', 'JavaScript'],
     repoUrl: 'https://github.com/palmerusaf/battle-ship',
     vid: BattleshipVid,
