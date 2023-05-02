@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { DATA } from './Data';
 import { CodeSvg } from './Icons/Code';
 import { PlaySvg } from './Icons/Play';
@@ -32,13 +33,7 @@ export const Projects = () => {
             <Link label='demo' svg={PlaySvg} href={demoUrl} />
           </div>
         </div>
-        <video
-          src={vid}
-          muted
-          autoPlay
-          loop
-          className='object-cover h-full shadow-md shadow-slate-500 hacker:shadow-green-500 dark:shadow-purple-400'
-        ></video>
+        <VideoWithLoad src={vid} />
       </div>
       <div className='grid grid-cols-2 gap-4 md:mt-6'>
         <Button onClick={prevIndex} label='prev' />
@@ -47,6 +42,32 @@ export const Projects = () => {
     </div>
   );
 };
+
+function VideoWithLoad({ src }: { src: string }) {
+  const [loaded, setLoaded] = useState(false);
+  return (
+    <div className='relative'>
+      <div
+        className={`absolute flex h-full w-full flex-col items-center justify-center gap-2 ${loaded ? 'opacity-0' : 'opacity-100'
+          }`}
+      >
+        <div className='w-12 h-12 rounded-full border-2 border-transparent animate-spin border-x-pink-500 hacker:border-x-green-500 dark:border-x-purple-400' />
+        <div className='font-bold animate-pulse'>Loading...</div>
+      </div>
+      <video
+        src={src}
+        muted
+        autoPlay
+        onPlay={() => {
+          setLoaded(true);
+        }}
+        loop
+        className={`h-full object-cover shadow-md shadow-slate-500 hacker:shadow-green-500 dark:shadow-purple-400 ${loaded ? 'opacity-100' : 'opacity-0'
+          }`}
+      ></video>
+    </div>
+  );
+}
 
 interface LinkProps {
   label: string;
