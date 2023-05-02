@@ -10,7 +10,7 @@ export const Projects = () => {
   return (
     <div
       key={index}
-      className='flex flex-col justify-between p-4 mx-2 mt-3 bg-emerald-200 rounded-lg shadow-lg duration-500 md:p-6 md:mx-auto md:max-w-xl md:text-lg dark:text-purple-400 h-[550px] shadow-gray-500 animate-in fade-in hacker:skew-x-0 hacker:bg-black hacker:text-green-500 hacker:shadow-green-500 md:h-[680px] dark:bg-slate-900 dark:shadow-purple-400'
+      className='flex flex-col justify-between p-4 mx-4 mt-3 bg-emerald-200 shadow-lg duration-500 skew-x-2 md:p-6 md:mx-auto md:max-w-xl md:text-lg dark:text-purple-400 dark:-skew-x-2 h-[550px] shadow-gray-500 animate-in fade-in hacker:skew-x-0 hacker:bg-black hacker:text-green-500 hacker:shadow-green-500 md:h-[680px] dark:bg-slate-900 dark:shadow-purple-400'
     >
       <h1 className='mb-2 w-full text-xl font-bold text-center md:text-2xl dark:text-purple-400 dark:font-astrospace'>
         {title}
