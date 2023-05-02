@@ -21,7 +21,7 @@ function App() {
   const connectRef: any = useRef<HTMLDivElement>();
 
   useEffect(() => {
-    homeRef.current.scrollIntoView({ behavior: 'smooth' });
+    projectsRef.current.scrollIntoView({ behavior: 'smooth' });
   }, []);
 
   return (
