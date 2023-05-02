@@ -7,7 +7,10 @@ export const Projects = () => {
   const { index, nextIndex, prevIndex } = useIndexer(DATA.length);
   const { title, repoUrl, demoUrl, desc, vid, techUsed } = DATA[index];
   return (
-    <div className='p-4 mx-2 mt-3 bg-emerald-200 rounded-lg shadow-lg md:p-6 md:mx-auto md:max-w-xl md:text-lg dark:text-purple-400 shadow-gray-500 hacker:skew-x-0 hacker:bg-black hacker:text-green-500 hacker:shadow-green-500 dark:bg-slate-900 dark:shadow-purple-400'>
+    <div
+      key={index}
+      className='flex flex-col justify-between p-4 mx-2 mt-3 bg-emerald-200 rounded-lg shadow-lg duration-500 md:p-6 md:mx-auto md:max-w-xl md:text-lg dark:text-purple-400 h-[550px] shadow-gray-500 animate-in fade-in hacker:skew-x-0 hacker:bg-black hacker:text-green-500 hacker:shadow-green-500 md:h-[680px] dark:bg-slate-900 dark:shadow-purple-400'
+    >
       <h1 className='mb-2 w-full text-xl font-bold text-center md:text-2xl dark:text-purple-400 dark:font-astrospace'>
         {title}
       </h1>
@@ -34,7 +37,7 @@ export const Projects = () => {
           muted
           autoPlay
           loop
-          className='shadow-md shadow-slate-500 hacker:shadow-green-500 dark:shadow-purple-400'
+          className='object-cover h-full shadow-md shadow-slate-500 hacker:shadow-green-500 dark:shadow-purple-400'
         ></video>
       </div>
       <div className='grid grid-cols-2 gap-4 md:mt-6'>

@@ -39,7 +39,7 @@ export const DATA: DataProps[] = [
   {
     title: 'Portfolio',
     demoUrl: 'https://brandenpalmer.dev',
-    desc: 'My personal portfolio built  using React and Tailwind.',
+    desc: 'Personal portfolio built  using React and Tailwind.',
     techUsed: ['Vite', 'TypeScript', 'React', 'TailwindCSS'],
     repoUrl: 'https://github.com/palmerusaf/portfolio',
     vid: PortfolioVid,
