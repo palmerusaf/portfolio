@@ -14,7 +14,7 @@ import {
 
 export const Skills = () => {
   return (
-    <ul className='flex flex-wrap gap-2 justify-center md:mx-auto md:mt-3 md:max-w-xl'>
+    <ul className='flex flex-wrap gap-2 justify-center md:mx-auto md:mt-36 md:max-w-xl'>
       <Skill label='Firebase' icon={FirebaseIcon} />
       <Skill label='Git' icon={GitIcon} />
       <Skill label='JavaScript' icon={JSIcon} />
