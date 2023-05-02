@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/palmerusaf/portfolio">
-    <img src="https://github.com/othneildrew/Best-README-Template/blob/master/images/logo.png?raw=true" alt="Logo" width="80" height="80">
+    <img src="./public/hoodie.svg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Personal Portfolio</h3>
@@ -41,7 +41,7 @@
     <a href="https://github.com/palmerusaf/portfolio"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/palmerusaf/portfolio">View Demo</a>
+    <a href="https://brandenpalmer.dev">View Demo</a>
     ·
     <a href="https://github.com/palmerusaf/portfolio/issues">Report Bug</a>
     ·
@@ -75,8 +75,10 @@
 
 ### Built With
 
-- [![React][React.js]][React-url]
 - [![Vite][Vite.js]][Vite-url]
+- [![React][React.js]][React-url]
+- [![TypeScript][TypeScript]][TypeScript-url]
+- [![Tailwind][Tailwind]][Tailwind-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,11 +86,12 @@
 
 ## Roadmap
 
-- [ ] Add nav bar
-- [ ] Add about me
-- [ ] Add project section
-  - [ ] Add videos
-- [ ] Add contact section
+- [x] Add nav bar
+- [x] Add about section
+- [x] Add skills section
+- [x] Add project section
+  - [ ] Add youtube videos
+- [x] Add connect section
 
 See the [open issues](https://github.com/palmerusaf/portfolio/issues) for a full list of proposed features (and known issues).
 
@@ -141,3 +144,7 @@ Project Link: [https://github.com/palmerusaf/portfolio](https://github.com/githu
 [React-url]: https://reactjs.org/
 [Vite.js]: https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E
 [Vite-url]: https://vitejs.dev/
+[TypeScript]: https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
+[TypeScript-url]: https://www.typescriptlang.org/
+[Tailwind]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
+[Tailwind-url]: https://tailwindcss.com/
