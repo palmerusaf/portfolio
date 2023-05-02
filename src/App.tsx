@@ -21,11 +21,11 @@ function App() {
   const connectRef: any = useRef<HTMLDivElement>();
 
   useEffect(() => {
-    projectsRef.current.scrollIntoView({ behavior: 'smooth' });
+    homeRef.current.scrollIntoView({ behavior: 'smooth' });
   }, []);
 
   return (
-    <div className='font-sans hacker:font-pixel dark:font-galaxy'>
+    <div className='font-mono hacker:font-pixel dark:font-galaxy'>
       <Background />
       <NavBar refs={[homeRef, aboutRef, skillsRef, projectsRef, connectRef]} />
       <Section pRef={homeRef}>

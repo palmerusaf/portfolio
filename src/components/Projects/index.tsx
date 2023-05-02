@@ -21,7 +21,7 @@ export const Projects = () => {
       <div className='grid grid-cols-2 gap-4 m-3 md:gap-6'>
         <div className='flex flex-col justify-between'>
           <div>
-            <div className='font-bold text-center underline md:text-2xl'>
+            <div className='font-bold text-xl hacker:text-base text-center underline md:text-2xl'>
               Tech Used
             </div>
             <ul className='list-disc list-inside'>
