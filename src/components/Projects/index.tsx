@@ -33,7 +33,9 @@ export const Projects = () => {
             <Link label='demo' svg={PlaySvg} href={demoUrl} />
           </div>
         </div>
-        <VideoWithLoad src={vid} />
+        <a rel='noopener' target='_blank' href={demoUrl}>
+          <VideoWithLoad src={vid} />
+        </a>
       </div>
       <div className='grid grid-cols-2 gap-4 md:mt-6'>
         <Button onClick={prevIndex} label='prev' />
