@@ -37,7 +37,7 @@ interface SkillProps {
 
 function Skill(props: SkillProps) {
   return (
-    <li className='p-1 bg-emerald-200 shadow-md duration-300 skew-x-3 dark:text-purple-400 dark:-skew-x-3 shadow-gray-500 hacker:skew-x-0 hacker:bg-black hacker:text-green-500 hacker:shadow-green-500 dark:bg-slate-900 dark:shadow-purple-500'>
+    <li className='p-1 bg-emerald-200 shadow-md duration-300 skew-x-3 dark:tracking-widest dark:text-purple-400 dark:-skew-x-3 shadow-gray-500 hacker:skew-x-0 hacker:bg-black hacker:text-green-500 hacker:shadow-green-500 dark:bg-slate-900 dark:shadow-purple-500'>
       <div className='flex justify-center p-2 w-24 h-24'>
         <img
           src={props.icon}

@@ -13,15 +13,15 @@ export const Projects = () => {
       className='flex flex-col justify-between p-4 mx-4 mt-6 bg-emerald-200 shadow-lg duration-300 skew-x-2 md:p-6 md:mx-auto md:max-w-xl md:text-lg dark:text-purple-400 dark:-skew-x-2 h-[550px] shadow-gray-500 animate-in fade-in hacker:skew-x-0 hacker:bg-black hacker:text-green-500 hacker:shadow-green-500 md:h-[680px] dark:bg-slate-900 dark:shadow-purple-400'
     >
       <div>
-        <h1 className='mb-2 w-full text-xl font-bold text-center md:text-2xl dark:text-purple-400 hacker:font-pixel font-friends dark:font-astrospace'>
+        <h1 className='mb-2 w-full text-xl font-bold text-center md:text-2xl dark:text-purple-400 font-friends hacker:font-pixel dark:font-astrospace'>
           {title}
         </h1>
-        <p className='text-center'>{desc}</p>
+        <p className='text-center dark:tracking-widest'>{desc}</p>
       </div>
-      <div className='grid grid-cols-2 gap-4 m-3 md:gap-6'>
+      <div className='grid grid-cols-2 gap-4 m-3 md:gap-6 dark:tracking-widest'>
         <div className='flex flex-col justify-between'>
           <div>
-            <div className='font-bold text-xl hacker:text-base text-center underline md:text-2xl'>
+            <div className='text-xl font-bold text-center underline md:text-2xl dark:font-normal hacker:text-base dark:tracking-[0.2em]'>
               Tech Used
             </div>
             <ul className='list-disc list-inside'>
