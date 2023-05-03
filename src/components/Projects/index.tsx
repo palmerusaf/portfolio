@@ -24,7 +24,7 @@ export const Projects = () => {
             <div className='text-xl font-bold text-center underline md:text-2xl dark:font-normal hacker:text-base dark:tracking-[0.2em]'>
               Tech Used
             </div>
-            <ul className='list-disc list-inside'>
+            <ul className='list-disc list-inside whitespace-nowrap'>
               {techUsed.sort().map((item) => (
                 <li>{item}</li>
               ))}
