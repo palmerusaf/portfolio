@@ -7,9 +7,10 @@ import {
   NPMIcon,
   ReactIcon,
   SassIcon,
+  StorybookIcon,
   TailwindIcon,
   TSIcon,
-  WebpackIcon,
+  WebpackIcon
 } from './icons';
 
 export const Skills = () => {
@@ -23,6 +24,7 @@ export const Skills = () => {
       <Skill label='NPM' icon={NPMIcon} />
       <Skill label='React' icon={ReactIcon} />
       <Skill label='Sass' icon={SassIcon} />
+      <Skill label='Storybook' icon={StorybookIcon} />
       <Skill label='TailwindCSS' icon={TailwindIcon} />
       <Skill label='TypeScript' icon={TSIcon} />
       <Skill label='Webpack' icon={WebpackIcon} />

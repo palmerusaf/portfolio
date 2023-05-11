@@ -9,6 +9,7 @@ import SassIcon from './sass.svg';
 import TailwindIcon from './tailwind.svg';
 import TSIcon from './ts.svg';
 import WebpackIcon from './webpack.svg';
+import StorybookIcon from './storybook.png'
 
 export {
   JSIcon,
@@ -19,6 +20,7 @@ export {
   NextIcon,
   ReactIcon,
   SassIcon,
+  StorybookIcon,
   WebpackIcon,
   TailwindIcon,
   FirebaseIcon,
