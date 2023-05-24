@@ -4,7 +4,7 @@ import Moon from './moon';
 import Sun from './sun';
 
 export function ThemeToggle() {
-  let indexRef = useRef(0);
+  let indexRef = useRef(1);
   const themes = ['', 'dark', 'hacker'];
   const cycleTheme = () =>
     (document.body.className = themes[++indexRef.current % themes.length]);
