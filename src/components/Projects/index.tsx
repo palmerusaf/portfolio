@@ -85,7 +85,7 @@ function Link({ label, svg, href }: LinkProps) {
       rel='noopener'
       target='_blank'
       href={href}
-      className='flex justify-evenly items-center py-1 px-2 text-xl font-bold text-center text-pink-500 bg-yellow-300 shadow duration-300 skew-x-12 cursor-pointer dark:tracking-widest dark:-skew-x-12 shadow-gray-500 hacker:skew-x-0 hacker:border hacker:border-green-500 hacker:bg-black hacker:tracking-normal hacker:text-green-500 hacker:shadow-green-500 dark:bg-slate-900 dark:shadow-purple-400'
+      className='flex justify-evenly dark:font-galaxy items-center py-1 px-2 text-xl font-bold text-center text-pink-500 bg-yellow-300 shadow duration-300 skew-x-12 cursor-pointer dark:tracking-widest dark:-skew-x-12 shadow-gray-500 hacker:skew-x-0 hacker:border hacker:border-green-500 hacker:bg-black hacker:tracking-normal hacker:text-green-500 hacker:shadow-green-500 dark:bg-slate-900 dark:shadow-purple-400'
     >
       {svg({
         className:
@@ -99,7 +99,7 @@ function Link({ label, svg, href }: LinkProps) {
 function Button({ label, onClick }: { label: string; onClick: () => void }) {
   return (
     <button
-      className='flex gap-2 justify-evenly items-center py-1 px-2 text-xl font-bold text-center text-pink-500 bg-yellow-300 shadow duration-300 skew-x-12 cursor-pointer dark:tracking-widest dark:-skew-x-12 shadow-gray-500 hacker:skew-x-0 hacker:border hacker:border-green-500 hacker:bg-black hacker:tracking-normal hacker:text-green-500 hacker:shadow-green-500 dark:bg-slate-900 dark:shadow-purple-400'
+      className='flex gap-2 justify-evenly items-center py-1 px-2 text-xl font-bold text-center text-pink-500 bg-yellow-300 shadow dark:font-galaxy duration-300 skew-x-12 cursor-pointer dark:tracking-widest dark:-skew-x-12 shadow-gray-500 hacker:skew-x-0 hacker:border hacker:border-green-500 hacker:bg-black hacker:tracking-normal hacker:text-green-500 hacker:shadow-green-500 dark:bg-slate-900 dark:shadow-purple-400'
       onClick={onClick}
     >
       {label}
