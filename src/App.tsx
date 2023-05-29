@@ -51,7 +51,7 @@ function App() {
       <Section pRef={aboutRef}>
         <SectionHeader label='About' />
         <div className='-mt-20 flex h-full items-center px-4'>
-          <div className='mx-auto flex max-w-xl skew-x-3 flex-col overflow-hidden bg-emerald-200 p-4 indent-6 font-bold shadow-lg shadow-gray-500 duration-300 hacker:skew-x-0 hacker:bg-black hacker:text-sm hacker:tracking-normal hacker:text-green-500 hacker:shadow-green-500 dark:-skew-x-3 dark:bg-slate-900 dark:tracking-widest dark:text-purple-400 dark:shadow-purple-400 md:text-lg md:hacker:text-base'>
+          <div className='mx-auto flex max-w-xl skew-x-3 flex-col overflow-hidden bg-emerald-200 p-4 indent-6 font-bold shadow-lg shadow-gray-500 duration-300 hacker:skew-x-0 hacker:bg-black hacker:text-sm hacker:tracking-normal hacker:text-green-500 hacker:shadow-green-500 dark:-skew-x-3 dark:bg-slate-900 dark:text-purple-400 dark:shadow-purple-400 md:text-lg md:hacker:text-base'>
             <p>
               Hello there, I'm Branden. I'm a front-end developer/Air Force
               veteran from the USA. Honestly though, I'm just a big nerd.

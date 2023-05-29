@@ -39,7 +39,7 @@ function Link({ label, svg, href }: LinkProps) {
         rel='noopener'
         target='_blank'
         href={href}
-        className='flex skew-x-3 cursor-pointer items-center gap-2 bg-emerald-200 px-3 py-1 text-3xl font-bold shadow shadow-gray-500 duration-300 hover:skew-x-12 hover:bg-yellow-300 hover:px-2 hover:py-1 hover:text-pink-500 hover:shadow hacker:skew-x-0 hacker:bg-black hacker:tracking-normal hacker:text-green-500 hacker:shadow-green-500 hover:hacker:skew-x-0 hover:hacker:border hover:hacker:border-green-500 hover:hacker:shadow-green-500 dark:bg-slate-900 dark:tracking-widest dark:text-purple-400 dark:shadow-purple-400 hover:dark:-skew-x-12 hover:dark:shadow-purple-400'
+        className='flex skew-x-3 cursor-pointer items-center gap-2 bg-emerald-200 px-3 py-1 text-3xl font-bold shadow shadow-gray-500 duration-300 hover:skew-x-12 hover:bg-yellow-300 hover:px-2 hover:py-1 hover:text-pink-500 hover:shadow hacker:skew-x-0 hacker:bg-black hacker:tracking-normal hacker:text-green-500 hacker:shadow-green-500 hover:hacker:skew-x-0 hover:hacker:border hover:hacker:border-green-500 hover:hacker:shadow-green-500 dark:bg-slate-900 dark:text-purple-400 dark:shadow-purple-400 hover:dark:-skew-x-12 hover:dark:shadow-purple-400'
       >
         {svg({
           className:
