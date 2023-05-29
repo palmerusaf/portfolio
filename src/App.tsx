@@ -27,7 +27,7 @@ function App() {
   return (
     <div className='font-mono hacker:font-pixel'>
       <Background />
-      <NavBar refs={[homeRef, aboutRef, skillsRef, projectsRef, connectRef]} />
+      <NavBar refs={[homeRef, skillsRef, projectsRef, connectRef, aboutRef]} />
       <Section pRef={homeRef}>
         <div className='flex h-full w-full flex-col items-center justify-center'>
           <ProfilePic />
@@ -35,6 +35,18 @@ function App() {
             Front-End Developer
           </h2>
         </div>
+      </Section>
+      <Section pRef={skillsRef}>
+        <SectionHeader label='Skills' />
+        <Skills />
+      </Section>
+      <Section pRef={projectsRef}>
+        <SectionHeader label='Projects' />
+        <Projects />
+      </Section>
+      <Section pRef={connectRef}>
+        <SectionHeader label='Connect' />
+        <Connect />
       </Section>
       <Section pRef={aboutRef}>
         <SectionHeader label='About' />
@@ -74,18 +86,6 @@ function App() {
             </p>
           </div>
         </div>
-      </Section>
-      <Section pRef={skillsRef}>
-        <SectionHeader label='Skills' />
-        <Skills />
-      </Section>
-      <Section pRef={projectsRef}>
-        <SectionHeader label='Projects' />
-        <Projects />
-      </Section>
-      <Section pRef={connectRef}>
-        <SectionHeader label='Connect' />
-        <Connect />
       </Section>
     </div>
   );
