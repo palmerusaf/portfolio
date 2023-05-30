@@ -10,7 +10,7 @@ export const Projects = () => {
   return (
     <div
       key={index}
-      className='mx-4 mt-6 flex h-[550px] skew-x-2 flex-col justify-between bg-emerald-200 p-4 shadow-lg shadow-gray-500 animate-in fade-in duration-300 hacker:skew-x-0 hacker:bg-black hacker:text-green-500 hacker:shadow-green-500 dark:-skew-x-2 dark:bg-slate-900 dark:text-purple-400 dark:shadow-purple-400 md:mx-auto md:h-[680px] md:max-w-xl md:p-6 md:text-lg'
+      className='mx-4 mt-3 flex h-[calc(100%-8rem)] skew-x-2 flex-col justify-between bg-emerald-200 p-4 shadow-lg shadow-gray-500 animate-in fade-in duration-300 hacker:skew-x-0 hacker:bg-black hacker:text-green-500 hacker:shadow-green-500 dark:-skew-x-2 dark:bg-slate-900 dark:text-purple-400 dark:shadow-purple-400 md:mx-auto md:h-[680px] md:max-w-xl md:p-6 md:text-lg'
     >
       <div>
         <h1 className='mb-2 w-full text-center font-friends text-xl font-bold hacker:font-pixel dark:font-astrospace dark:text-purple-400 md:text-2xl'>
@@ -50,7 +50,7 @@ export const Projects = () => {
 function VideoWithLoad({ src }: { src: string }) {
   const [loaded, setLoaded] = useState(false);
   return (
-    <div className='relative h-full'>
+    <div className='relative flex h-full items-center'>
       <div
         className={`absolute flex h-full w-full flex-col items-center justify-center gap-2 ${loaded ? 'opacity-0' : 'opacity-100'
           }`}
@@ -66,7 +66,7 @@ function VideoWithLoad({ src }: { src: string }) {
           setLoaded(true);
         }}
         loop
-        className={`h-full object-cover shadow-md shadow-slate-500 hacker:shadow-green-500 dark:shadow-purple-400 ${loaded ? 'opacity-100' : 'opacity-0'
+        className={`mx-auto h-auto object-cover shadow-md shadow-slate-500 hacker:shadow-green-500 dark:shadow-purple-400 ${loaded ? 'opacity-100' : 'opacity-0'
           }`}
       ></video>
     </div>
